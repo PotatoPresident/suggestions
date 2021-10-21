@@ -18,7 +18,8 @@ body:
       required: false
 
   - type: markdown
-    value: "----"
+      attributes:
+        value: "----"
 
   - type: checkboxes
     id: terms
