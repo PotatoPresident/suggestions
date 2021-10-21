@@ -1,0 +1,32 @@
+name: Plugin Request
+description: Request a new plugin
+labels: 'pending review'
+
+body:
+  - type: input
+    attributes:
+      label: Description
+      description: A clear and concise description of what the plugin would do. Don't get too specific, that's for the next part.
+    validations:
+      required: true
+
+  - type: input
+    attributes:
+      label: More Info
+      description: Here you can put more technical information, or get more specific. Feel free to also add context, mockups or anything else here.
+    validations:
+      required: false
+
+  - type: markdown
+    value: "----"
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com)
+      options:
+        - label: I checked if this request wasn't already proposed
+          required: true
+        - label: I made sure this request follows Powercord's [plugin guidelines](https://powercord.dev/guidelines)
+          required: true
