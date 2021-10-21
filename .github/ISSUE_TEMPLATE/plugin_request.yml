@@ -19,7 +19,8 @@ body:
 
   - type: markdown
     attributes:
-      value: "----"
+      value: |
+        ----
 
   - type: checkboxes
     id: terms
